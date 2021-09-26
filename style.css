@@ -5,43 +5,63 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-.hero {
-    height: 100%;
-    background: url(./images/hero_drone.jpg);
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+section {
+    height: 1080px;
+    width: 100vw;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
     position: relative;
 }
 
-.hero>ul {
+.hero_img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.container>ul {
     width: 100%;
     position: absolute;
     top: 15px;
     display: flex;
     justify-content: space-around;
     list-style: none;
+    background-color: #b00605;
 }
 
-.hero>ul>li>a {
+.container>ul>li>a {
     text-decoration: none;
     color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
     font-family: "Lato", sans-serif;
     font-size: 40px;
     line-height: 0px;
-    font-weight: 200;
+    font-weight: 400;
     display: flex;
     align-items: center;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+.container>ul>li>a:hover {
+    color: #b00605;
+    transform: scale(1.2);
+}
+
+.container>ul>li>a:active {
+    color: #b00605;
+    transform: scale(1);
+    text-decoration: underline;
 }
 
 .hero-content {
-    position: relative;
     text-align: center;
     position: absolute;
     top: 60%;
@@ -99,47 +119,17 @@ html {
 
 .text_highlight {
     font-weight: 600;
-}
-
-#arrow_down {
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translate(-50%);
-}
-
-#arrow_down--circle {
-    background: #021322;
-    width: 73px;
-    height: 73px;
-    border-radius: 50%;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 5px #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#arrow_down--arrow {
-    display: inline-block;
-    height: 0;
-    width: 0;
-    border-top: 38px solid #b00605;
-    border-right: 23px solid transparent;
-    border-left: 23px solid transparent;
+    color: #b00605;
 }
 
 .divider_section--red {
-    width: 100vw;
+    width: 100%;
     height: 10px;
     background-color: #b00605;
 }
 
 .section_background--blue {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
     background: #021322;
 }
 
@@ -155,6 +145,7 @@ html {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
 }
 
 .section-header>h3 {
@@ -186,6 +177,10 @@ html {
     color: #ffffff;
 }
 
+#text_left>p:first-of-type {
+    font-weight: 400;
+}
+
 #text_left>h4 {
     font-weight: 200;
     font-size: 50px;
@@ -209,10 +204,14 @@ html {
     box-shadow: inset 0px 14px 20px rgba(0, 0, 0, 0.95);
 }
 
+#image--right>img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
 .section_services {
-    height: 1080px;
-    width: 1900px;
-    background: url(./images/hero_drone.jpg);
+    background: url(./images/drone_pic.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,7 +255,6 @@ html {
 .services_card_text--header {
     width: 392px;
     font-family: "Bebas Neue", cursive;
-    font-style: normal;
     font-weight: normal;
     font-size: 31px;
     line-height: 37px;
@@ -271,9 +269,185 @@ html {
 
 .services_card_text--describ {
     font-family: "Lato", sans-serif;
-    font-style: normal;
     font-weight: 200;
     font-size: 18px;
     line-height: 25px;
     padding: 0 16px 0 16px;
+}
+
+.section_about {
+    display: flex;
+    align-items: center;
+}
+
+.about_container {
+    margin: 0 auto 0 auto;
+    width: 1678px;
+    height: 902px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 34px #000000;
+    backdrop-filter: blur(57px);
+}
+
+#about_text {
+    width: 1093px;
+    height: 648px;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 33px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+    color: #ffffff;
+    text-shadow: 0px 4px 15px #000000;
+}
+
+.section_offers {
+    background: url(./images/Plan\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container_offers {
+    width: 100%;
+    height: 666px;
+    margin: 125px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.offers_card {
+    width: 434px;
+    height: 666px;
+    background: rgba(4, 4, 4, 0.1);
+    box-shadow: -3px 3px 0px #b00605;
+    backdrop-filter: blur(154px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-aroud;
+}
+
+.card--price {
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    font-size: 63px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b00605;
+    text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly {
+    font-weight: 200;
+    font-size: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.price_devise {
+    color: #ffffff;
+}
+
+.numbers_drone {
+    margin: auto;
+    height: 86px;
+    margin: 0;
+    font-family: "Bebas Neue", cursive;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 86px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b00605;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.offers_describ {
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 27px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.75);
+}
+
+.discover_btn {
+    margin: auto;
+    width: 223px;
+    height: 70px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.discover_btn:hover {
+    border: 1px solid #b00605;
+    color: #b00605;
+    transform: scale(1.1);
+}
+
+.discover_btn:active {
+    border: 1px solid #b00605;
+    background-color: #b00605;
+    color: #ffffff;
+}
+
+footer {
+    width: 100vw;
+    margin: 0;
+    height: 215px;
+    padding-top: 57px;
+    background-color: #021322;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer>ul {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 705px;
+    height: 34px;
+    font-family: " Lato", sans-serif;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer>p {
+    margin: 34px auto auto auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    color: #ffffff;
 }

@@ -8,39 +8,36 @@
 
 <body>
     <section class="hero" id="home">
-        <ul class="nav">
-            <li class="nav_item">
-                <a class="nav_item--link" href="#"> Products </a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_item--link" href="#"> Services </a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_item--link" href="#"> About Us </a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_item--link" href="#"> Contact Us </a>
-            </li>
-        </ul>
-        <div class="hero-content">
-            <div id="logo">
-                <div class="triangle"></div>
-                <h1>SKYNET</h1>
-                <div id="divider--red"></div>
-            </div>
-            <h2>
-                <span class="text_highlight">New</span> generation of personal
-                <span class="text_highlight">security</span>
-                <span class="text_highlight">accessible</span> to everyone
-            </h2>
-        </div>
-        <div id="arrow_down">
-            <div id="arrow_down--circle">
-                <div id="arrow_down--arrow"></div>
+        <div class="container">
+            <img class="hero_img" src="./images/hero_drone.jpg" alt="" />
+            <ul>
+                <li class="nav_item">
+                    <a class="nav_item--link" href="#products"> Products </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_item--link" href="#services"> Services </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_item--link" href="#about"> About Us </a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_item--link" href="#offers"> Offers </a>
+                </li>
+            </ul>
+            <div class="hero-content">
+                <div id="logo">
+                    <div class="triangle"></div>
+                    <h1>SKYNET</h1>
+                    <div id="divider--red"></div>
+                </div>
+                <h2>
+                    <span class="text_highlight">New</span> generation of personal
+                    <span class="text_highlight">security</span>
+                    <span class="text_highlight">accessible</span> to everyone
+                </h2>
             </div>
         </div>
     </section>
-    <div class="divider_section--red"></div>
     <section class="section_background--blue" id="products">
         <div class="section-header">
             <h3>our solution for your security</h3>
@@ -54,7 +51,7 @@
                     <span class="text_highlight">security</span> drone .
                 </h4>
                 <div class="divider_text--red"></div>
-                <p class="product_text text_highlight">
+                <p class="product_text">
                     Our drone guarantees you security at all times thanks to its artificial intelligence which calculates at each moment the least risk for your safety.
                 </p>
                 <p class="product_text">
@@ -62,11 +59,14 @@
                     survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
             </div>
-            <div id="image--right"></div>
+            <div id="image--right">
+                <img src="./images/drone_pic.jpg" alt="" />
+            </div>
         </div>
     </section>
     <div class="divider_section--red"></div>
     <section class="section_services" id="services">
+        <div class="container"></div>
         <div class="section-header">
             <h3>we guarantee you a services at all times</h3>
             <div class="divider_header--red"></div>
@@ -74,7 +74,7 @@
         <div class="container_services">
             <div class="container_services--card">
                 <div class="services_card--img">
-                    <img src="#" alt="" />
+                    <img src="./images/controlecenter.jpg" alt="" />
                 </div>
                 <div class="services_card_text">
                     <p class="services_card_text--header">
@@ -88,7 +88,7 @@
             </div>
             <div class="container_services--card">
                 <div class="services_card--img">
-                    <img src="#" alt="" />
+                    <img src="./images/phone.jpg" alt="" />
                 </div>
                 <div class="services_card_text">
                     <p class="services_card_text--header">
@@ -102,7 +102,7 @@
             </div>
             <div class="container_services--card">
                 <div class="services_card--img">
-                    <img src="#" alt="" />
+                    <img src="./images/maintenance.jpg" alt="" />
                 </div>
                 <div class="services_card_text">
                     <p class="services_card_text--header">
@@ -117,7 +117,7 @@
         </div>
     </section>
     <div class="divider_section--red"></div>
-    <section class="section_background--blue" id="about">
+    <section class="section_background--blue section_about" id="about">
         <div class="about_container">
             <div class="section-header">
                 <h3>ABOUT US</h3>
@@ -134,55 +134,58 @@
         </div>
     </section>
     <div class="divider_section--red"></div>
-    <section class="section_backgroud--image" id="offers">
+    <section class="section_offers" id="offers">
         <div class="section-header">
             <h3>choose your plan</h3>
             <div class="divider_header--red"></div>
         </div>
         <div class="container_offers">
             <div class="container_offers--card">
-                <div class="offers_card--price">
+                <div class="offers_card">
                     <h5 class="card--price">
-                        <span class="price_devise">$</span> 150.00
+                        <div class="price">
+                            <span class="price_devise">$</span> 150.00
+                        </div>
                         <span class="monthly">per month</span>
                     </h5>
                     <p class="numbers_drone">1 drone</p>
                     <p class="offers_describ">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                     </p>
-                    <div class="discover_btn">
-                        <button>discover</button>
-                    </div>
+
+                    <button class="discover_btn">discover</button>
                 </div>
             </div>
             <div class="container_offers--card">
-                <div class="offers_card--price">
+                <div class="offers_card">
                     <h5 class="card--price">
-                        <span class="price_devise">$</span> 150.00
+                        <div class="price">
+                            <span class="price_devise">$</span> 400.00
+                        </div>
                         <span class="monthly">per month</span>
                     </h5>
-                    <p class="numbers_drone">1 drone</p>
+                    <p class="numbers_drone">3 drone</p>
                     <p class="offers_describ">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                     </p>
-                    <div class="discover_btn">
-                        <button>discover</button>
-                    </div>
+
+                    <button class="discover_btn">discover</button>
                 </div>
             </div>
             <div class="container_offers--card">
-                <div class="offers_card--price">
+                <div class="offers_card">
                     <h5 class="card--price">
-                        <span class="price_devise">$</span> 150.00
+                        <div class="price">
+                            <span class="price_devise">$</span> 1500.00
+                        </div>
                         <span class="monthly">per month</span>
                     </h5>
-                    <p class="numbers_drone">1 drone</p>
+                    <p class="numbers_drone">12 drone</p>
                     <p class="offers_describ">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                     </p>
-                    <div class="discover_btn">
-                        <button>discover</button>
-                    </div>
+
+                    <button class="discover_btn">discover</button>
                 </div>
             </div>
         </div>
@@ -190,10 +193,10 @@
     <div class="divider_section--red"></div>
     <footer>
         <ul id="list_link">
-            <li class="list_item"><a href="#"> Home </a></li>
-            <li class="list_item"><a href="#"> Services </a></li>
-            <li class="list_item"><a href="#"> About </a></li>
-            <li class="list_item"><a href="#"> Terms </a></li>
+            <li class="list_item"><a href="#home"> Home </a></li>
+            <li class="list_item"><a href="#services"> Services </a></li>
+            <li class="list_item"><a href="#about"> About </a></li>
+            <li class="list_item"><a href="#offers"> Offers </a></li>
             <li class="list_item"><a href="#"> Privacy Policy </a></li>
         </ul>
         <p>Skynet © 2050</p>
